@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sunnyside Agency</title>
+    <link rel="icon" href="favicon.png" />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img class="navbar__logo" src="logo.svg"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <img src="icon-hamburger.svg" />
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#about__container"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services_div">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonials_Section">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navbar__contact">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--Home Page-->
+    <div class="home__container">
+      <div class="home__title">WE ARE CREATIVES</div>
+      <img class="home__arrow" src="icon-arrow-down.svg" />
+      <picture>
+        <source media="(max-width:640px)" srcset="/mobile/image-header.jpg" />
+        <img src="/desktop/header.jpg" id="image__header" />
+      </picture>
+    </div>
+
+    <!--About Page-->
+    <div id="about__container">
+      <div class="about__line1">
+        <div class="about_line1_part1">
+          <p class="subtitle">Transform your brand</p>
+          <p class="about_description">
+            We area full-service creative agency speacializing in helping brands
+            grow fast. Engage your clients through compelling visuals that do
+            most of the marketing for you.
+          </p>
+          <p
+            class="learn_more"
+            style="box-shadow: 0 25px 0 0 hsl(51, 90%, 72%)"
+          >
+            LEARN MORE
+          </p>
+        </div>
+        <div class="about_line1_part2">
+          <img class="about_line1-part2_img" src="mobile\image-transform.jpg" />
+        </div>
+      </div>
+      <div class="about__line2">
+        <div class="about_line2_part2">
+          <img class="about_line2-part2_img" src="mobile\image-stand-out.jpg" />
+        </div>
+        <div class="about_line2_part1">
+          <p class="subtitle">Stand out to the right audience</p>
+          <p class="about_description">
+            Using a collaborative formula of designers, researchers,
+            photographers, videographers, and copywriters, we'll build and
+            extend your brand in digitial places.
+          </p>
+          <p class="learn_more" style="box-shadow: 0 25px 0 0 hsl(7, 85%, 76%)">
+            LEARN MORE
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--Services-->
+    <div id="services_div">
+      <div class="services_part1">
+        <picture>
+          <source
+            media="(max-width:640px)"
+            srcset="/mobile/image-graphic-design.jpg"
+          />
+          <img
+            src="desktop/image-graphic-design.jpg"
+            class="services_img"
+            width="100%"
+            height="100%"
+          />
+        </picture>
+
+        <p class="services_title">Graphic Design</p>
+        <p class="services_description">
+          Great design makes you memorable. We deliver artwork that underscores
+          your brand message and captures potential clients' attention.
+        </p>
+      </div>
+      <div class="services_part2">
+        <picture>
+          <source
+            media="(max-width:640px)"
+            srcset="/mobile/image-photography.jpg"
+          />
+          <img
+            src="desktop/image-photography.jpg"
+            class="services_img"
+            width="100%"
+            height="100%"
+          />
+        </picture>
+
+        <p class="services_title">Photography</p>
+        <p class="services_description">
+          Increase your credibility by getting the most stunning, high-quality
+          photos that improve your business image.
+        </p>
+      </div>
+    </div>
+
+    <!--Client Testimonials-->
+    <section id="testimonials_Section">
+      <p class="client_heading">CLIENT TESTIMONIALS</p>
+      <div id="testimonials">
+        <div class="client">
+          <img class="client_img" src="image-emily.jpg" />
+          <p class="client_description">
+            We put our trust in Sunnyside and they delivered, making sure our
+            needs were met and deadlines were always hit.
+          </p>
+          <p class="client_name">Emily R.</p>
+          <p class="client_designation">Marketing Director</p>
+        </div>
+        <div class="client">
+          <img class="client_img" src="image-thomas.jpg" />
+          <p class="client_description">
+            Sunnyside’s enthusiasm coupled with their keen interest in our
+            brand’s success made it a satisfying and enjoyable experience.
+          </p>
+          <p class="client_name">Thomas S.</p>
+          <p class="client_designation">Chief Operating Officer</p>
+        </div>
+        <div class="client">
+          <img class="client_img" src="image-jennie.jpg" />
+          <p class="client_description">
+            Incredible end result! Our sales increased over 400% when we worked
+            with Sunnyside. Highly recommended!
+          </p>
+          <p class="client_name">Jennie F.</p>
+          <p class="client_designation">Business Owner</p>
+        </div>
+      </div>
+    </section>
+
+    <!--Images-->
+    <div style="display: flex; flex-direction: row; width: 100%">
+      <div class="images">
+        <picture>
+          <source
+            media="(max-width:640px)"
+            srcset="/mobile/image-gallery-milkbottles.jpg"
+          />
+          <img
+            src="desktop/image-gallery-milkbottles.jpg"
+            class="project_image1"
+          />
+        </picture>
+        <picture>
+          <source
+            media="(max-width:640px)"
+            srcset="/mobile/image-gallery-sugar-cubes.jpg"
+          />
+          <img
+            src="desktop/image-gallery-sugarcubes.jpg"
+            class="project_image2"
+          />
+        </picture>
+      </div>
+
+      <div class="images">
+        <picture>
+          <source
+            media="(max-width:640px)"
+            srcset="/mobile/image-gallery-cone.jpg"
+          />
+          <img src="desktop/image-gallery-cone.jpg" class="project_image2" />
+        </picture>
+
+        <picture>
+          <source
+            media="(max-width:640px)"
+            srcset="/mobile/image-gallery-orange.jpg"
+          />
+          <img src="desktop/image-gallery-orange.jpg" class="project_image1" />
+        </picture>
+      </div>
+    </div>
+
+    <!--Footer-->
+    <div class="footer">
+      <img src="footer.svg" />
+      <div class="footer_links">
+        <p>About</p>
+        <p>Services</p>
+        <p>Projects</p>
+      </div>
+      <div class="social_icons">
+        <img src="icon-facebook.svg" />
+        <img src="icon-instagram.svg" />
+        <img src="icon-twitter.svg" />
+        <img src="icon-pinterest.svg" />
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
